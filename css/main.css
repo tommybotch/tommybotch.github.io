@@ -5,38 +5,79 @@ body {
     overflow-x: hidden;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+header, footer, nav, aside {
+  padding: 1em;
 }
 
 li {
-    float: left;
-    border-right: 1px solid #bbb; /* add a divider between elements of navigation bar */
+    list-style-type: none; /* removes li bullets */
+    margin: auto; /* centers li to parent */
+    border: 1px solid white;
 }
 
 li a {
-    display: block;
+    display: flex; /* causes li to fill parent */
+    justify-content: center; /* centers the text of the li*/
     color: white;
     padding: 8px;
     background-color: #aaaaaa;
 }
 
-li a:hover {
+li a:hover { /* color change of attribute on hover */
   background-color: #111;
 }
 
-
 body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
     color: #777;
     letter-spacing: 1px;
     font-size: 14px;
     line-height: 20px;
     position: relative;
     text-align: center;
+}
+
+.intro { /* self introduction formatting, place in center */
+    display: block;
+    position: absolute;
+    padding: 3em;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #999;
+
+}
+
+.intro h1 {
+    font-size: 3em;
+    line-height: 1em;
+    padding-bottom: 0.5em;
+}
+
+nav {
+    display: flex;
+    flex-direction: row; /* orders flexboxes next to each other */
+    left: 0;
+    right: 0;
+    position: fixed; /* keeps nav bar at the top */ 
+    background-color: #333;
+}
+
+nav > li{
+    width: 100%;
+   /* border-bottom: 1px solid #bbb;  add a divider between elements of navigation bar */
+}
+
+body > footer > li {
+    display: inline;
+}
+
+body > article {
+    display: flex;
+    flex: 1;
 }
 
 .loading {
