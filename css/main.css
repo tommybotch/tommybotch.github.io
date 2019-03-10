@@ -5,7 +5,7 @@ Writen by Tommy Botch (3-7-19)
 
 */
 
-*, *::before, *::after {
+*, ::before, ::after {
     box-sizing: border-box;
 }
 
@@ -22,7 +22,7 @@ header, footer, nav, aside {
 }
 
 body {
-    font-family: "Helvetica Neue",Arial,sans-serif;
+    font-family: "Nunito-Sans",sans-serif;
     font-size: 16px;
     display: flex;
     flex-direction: column;
@@ -43,7 +43,7 @@ nav {
     left: 0;
     right: 0;
     position: fixed; /* keeps nav bar at the top */ 
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 footer {
@@ -68,64 +68,69 @@ nav a {
     color: white;
     padding: 8px;
     background-color: #aaaaaa;
+    text-decoration: none;
 }
 
 nav a:hover { /* color change of attribute on hover */
   background-color: #111;
 }
 
-.background {
-    height: 100%;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-}
-
 .nav_main a{
     margin: 0 1% 0 2%;
 }
 
-.contact {
-    display: flex;
+.homepage_landing{ /* container for background image, nests the intro text */
     width: 100%;
-    justify-content: center; /* centers the text of the li*/
-    color: white;
-    padding: 8px;
-}
-
-.contact a { /* keep icon container between size constraints */
-    width: 5%;
-    height: 5%;
-    max-width: 30px;
-    min-width: 20px;
-    min-height: 20px;
-    max-height: 30px;
-    margin: 0 8px;
-}
-
-.contact img { /*image will always fill its container*/
     height: 100%;
-    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(../resources/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 992px;
 }
 
 .intro { /* self introduction formatting, place in center */
     display: block;
     position: absolute;
-    padding: 3em;
+    text-align: left;
+    padding: 2em;
     top: 50%;
     left: 50%;
+    max-width: 800px;
     transform: translateX(-50%) translateY(-50%);
-    background-color: transparent;
+    background: rgba(0,0,0,0.2);
 
 }
 
 .intro h1 {
-    font-size: 3em;
-    line-height: 1em;
-    padding-bottom: 0.5em;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1em !important;
+    padding-bottom: 0.5rem;
 }
 
+.intro h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5em !important;
+}
+
+.contact_bar{
+    float: right;
+    padding-top: 1rem;
+}
+.contact_bar a{
+    margin: 0 2px;
+    text-decoration: none; /* removes hyperlink underline */
+}
+
+.contact_bar img { /*image will always fill its container*/
+    position: relative;
+    width: 35px ; /* force evenly sized images */
+    height: 35px ;
+    filter: invert(95%);
+    color: white;
+}
 .loading {
     position: fixed;
     top: 0;
