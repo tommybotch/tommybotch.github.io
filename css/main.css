@@ -1,3 +1,10 @@
+/*
+
+Disclaimer: front-end dev sux
+Writen by Tommy Botch (3-7-19)
+
+*/
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -20,7 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    color: #777;
+    color: white;
     letter-spacing: 1px;
     font-size: 14px;
     position: relative;
@@ -109,7 +116,7 @@ nav a:hover { /* color change of attribute on hover */
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    background-color: #999;
+    background-color: transparent;
 
 }
 
