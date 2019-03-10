@@ -17,8 +17,12 @@ body {
     overflow-x: hidden;
 }
 
-header, footer, nav, aside {
+header, footer, aside {
   padding: 1em;
+}
+
+a, a:visited, a:hover, a:active { /* keeps the color of hyperlinks the same */
+  color: inherit;
 }
 
 body {
@@ -42,6 +46,7 @@ nav {
     justify-content: space-between;
     left: 0;
     right: 0;
+    padding: 0 2rem;
     position: fixed; /* keeps nav bar at the top */ 
     background-color: rgba(0, 0, 0, 0.6);
 }
@@ -57,26 +62,30 @@ footer {
     background-color: transparent;
 }
 
-nav div{
+.nav_main {
     display: flex;
     width: 100%;
 }
 
-nav a {
+.nav_main div {
     display: flex; /* causes li to fill parent */
-    justify-content: center; /* centers the text of the li*/
+    width: 80px;
+    height: 50px;
+    vertical-align: middle;
+    justify-content: center; /* centers the text to container */
     color: white;
     padding: 8px;
-    background-color: #aaaaaa;
-    text-decoration: none;
+    border: 0 1em;
+    background-color: inherit;
 }
 
-nav a:hover { /* color change of attribute on hover */
+.nav_main div:hover { /* color change of attribute on hover */
   background-color: #111;
 }
 
-.nav_main a{
-    margin: 0 1% 0 2%;
+.nav_main a {
+    padding-top: 0.6rem;
+    text-decoration: none;
 }
 
 .homepage_landing{ /* container for background image, nests the intro text */
