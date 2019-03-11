@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
-<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
-</script>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script> //allows webpage to load in background for smoother transition
 	
 	$(document).ready(function () { 
 		//Preloader
 		$(window).on('load', function () {
-			preloaderFadeOutTime = 800; //time in ms
+			preloaderFadeOutTime = 1000; //time in ms
 
 			function hidePreloader() {
 				var preloader = $('.loading'); //div used to hide webpage loading
@@ -29,15 +28,17 @@
 
 </head>
 	<body>
-		<!--<img class="background" src="resources/background.jpg"></img>-->
-		<div class="loading" style="display: none;"></div>
+		<div class="loading"></div>
 		<nav>
 			<div class="nav_main">
 				<div class= "nav_main homebutton">
 					<a href="index.html">Home</a>
 				</div>
 				<div class= "nav_main about">
-					<a href="/about.html">About</a>
+					<a href="about.html">About</a>
+				</div>
+				<div class = "nav_main contact_page">
+					<a href="contact.html">Contact</a>
 				</div>
 			</div>
 		</nav>
