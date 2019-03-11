@@ -7,7 +7,7 @@
 	$(document).ready(function () { 
 		//Preloader
 		$(window).on('load', function () {
-			preloaderFadeOutTime = 800; //time in ms
+			preloaderFadeOutTime = 1000; //time in ms
 
 			function hidePreloader() {
 				var preloader = $('.loading'); //div used to hide webpage loading
@@ -30,8 +30,7 @@
 </head>
 	<body>
 		<!--<img class="background" src="resources/background.jpg"></img>-->
-		<div class="loading">
-		</div>
+		<div class="loading"></div>
 		<nav>
 			<div class="nav_main">
 				<div class= "nav_main homebutton">
@@ -56,6 +55,8 @@
 					</a>
 				</div>
 			</div><!-- /.container -->
+		</div>
+		<div class="about_page">
 		</div>
 		<article>
 			
