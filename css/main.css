@@ -151,7 +151,7 @@ footer {
     filter: invert(10%);
 }
 
-.loading {
+.loading { /*loading is the wrapper for the entire "content" section of the page. this is executed on by the js function at the top of each html page*/
     position: fixed;
     top: 0;
     left: 0;
@@ -159,4 +159,8 @@ footer {
     bottom: 0;
     background-color: #2e2e2e;
     z-index: 999999;
+}
+
+.posts{
+    
 }
