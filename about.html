@@ -29,22 +29,16 @@
 </head>
 	<body>
 		<div class="loading"></div>
-		<nav>
-			<div class="nav_main">
-				<div class= "nav_main homebutton">
-					<a href="index.html">Home</a>
-				</div>
-				<div class= "nav_main about">
-					<a href="about.html">About</a>
-				</div>
-				<div class="nav_main blog">
-					<a href="blog.html">Blog</a>
-				</div>
-				<div class = "nav_main contact_page">
-					<a href="contact.html">Contact</a>
-				</div>
-			</div>
-		</nav>
+
+			<div id="nav_bar"> <!-- leave an empty area for the nav bar to be loaded from another html file -->
+
+			</div> <!-- end of nav bar -->
+
+			<script> //js code to load the nav bar from html file
+				$(function(){
+				  $("#nav_bar").load("nav.html");
+				});
+			</script>
 		<div class="about_me">
 			<div class="bio_container">
 				<div id="bio_info">

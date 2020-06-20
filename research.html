@@ -29,32 +29,15 @@
 </head>
 	<body>
 		<div class="loading"></div>
-		<nav>
-			<div class="nav_main">
-				<div class= "nav_main homebutton">
-					<a href="index.html">Home</a>
-				</div>
-				<div class= "nav_main about">
-					<a href="about.html">About</a>
-				</div>
-				<div class="nav_main blog">
-					<a href="blog.html">Blog</a>
-				</div>
-				<div class = "nav_main contact_page">
-					<a href="contact.html">Contact</a>
-				</div>
-			</div>
-		</nav>
-		<div class="posts">
-			<h4>Documenting fMRI Learning Process</h4>
-				<p> I decided that with the new year (and decade!), it's about time to teach myself fMRI. Below I am documenting useful links to tutorials, videos, and other learning resources I found useful in this process.</p>
-				<ul><b>Tutorials:</b>
-					<li>Luke Chang's <a href="dartbrains.org">fMRI course</a></li>
-					<li>For more advance methods, <a href="https://brainiak.org/">Brainiak</a></li>
-					<li>Rebecca Saxe's <a href="https://cbmm.mit.edu/fmri-bootcamp">fMRI bootcamp</a></li>
-				</ul>
-		</div>
-		<div>
+			<div id="nav_bar"> <!-- leave an empty area for the nav bar to be loaded from another html file -->
+
+			</div> <!-- end of nav bar -->
+
+			<script> //js code to load the nav bar from html file
+				$(function(){
+				  $("#nav_bar").load("nav.html");
+				});
+			</script>
 
 		</div>
 		<footer>
